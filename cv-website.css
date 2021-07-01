@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    width:1024px;
+    margin:auto;
+}
+a{
+    text-decoration: none;
+}
+/*header*/
+.header{
+    background: url(HTML_sketch_export-master/assets/img-headerShape.png);
+    height: 399px;
+    margin-bottom: 130px;
+    position:relative;
+}
+.header .photo{
+    position:absolute;
+    left:135px;
+    top:124px;
+    width: 151px;
+    height: 151px;
+}
+.header .textbox{
+    position:absolute;
+    left:146px;
+    top:287px;
+    text-align: center;
+}
+.header .textbox h1{
+    font-size: 42px;
+    padding:7px;
+}
+.header .textbox h6{
+    color:#4a4a4a;
+    font-family: MicrosoftJhengHeiRegular;
+    padding: 2.5px;
+    font-size: 14px;
+}
+.linkList{
+    position: absolute;
+    left:422px;
+    top:124px;
+}
+.linkList li{
+    display: flex;
+    align-items: center;
+}
+.linkList a{
+    margin:15px 0px 15px 12px;
+    color: white; 
+    font-size: 18px;
+    font-family: MicrosoftJhengHeiRegular;
+}
+
+/*content*/
+    /*skills*/
+.skills h2{
+    text-align: center;
+    font-family: MicrosoftJhengHeiBold;
+    color: #1736DC;
+    font-size: 24px;
+    padding:4px;
+    margin-bottom: 48px;
+}
+.skillbox{
+    display: flex;
+    padding:0px 60.5px 0px 60.5px;
+    color:#4a4a4a;
+    margin-bottom: 56px;
+}
+.skillbox h4{
+    font-size: 18px;
+    padding:3px;
+}
+.skill1, .skill2, .skill3{
+    width: 284px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+    border-radius: 6px;
+    margin:0px 8.5px 0px 8.5px;
+}
+.skill1{
+    border-bottom:6px solid #F58D23;
+}
+.skill2{
+    border-bottom:6px solid #539E43 ;
+}
+.skill3{
+    border-bottom: 6px solid #6762A6;
+}
+.imgContainer {
+    display: flex;
+}
+.skillbox .imgContainer{
+    justify-content: center;
+    align-items: center;
+    height: 129px;
+}
+.skillbox h4{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 18px;
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.disc{
+    list-style: disc;
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 10px;
+    color: #4A4A4A;
+    margin:0px 0px 30px 40px;
+    line-height: 14px;
+}
+    /*experience*/
+.experience h2{
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 24px;
+    color: #1736DC;
+    padding:4px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.experience{
+    position: relative;
+    margin-bottom: 56px;
+}
+.experience .startDot{
+    position: absolute;
+    left: 496px;
+}
+.experience .line{
+    width: 2px;
+    height: 550.6px;
+    background: #d8d8d8;
+    margin: auto;
+}
+.experience .endtime{
+    width: 46px;
+    height: 4px;
+    margin: auto;
+    background: #D8D8D8;
+    border-radius: 2px;
+    margin-bottom: 56px;
+}
+.experienceContent{
+    display: flex;
+    margin:7px 0px 7px 0px;
+}
+.experienceContent img{
+    width: 24px;
+    height: 28px;
+}
+.experienceContent .detail{
+    border: 1px solid #FB56BF;
+    border-radius: 10px;
+    width: 260px;
+    padding:8px 9px 12px 12px;
+    margin:0px 13px 0px 13px;
+}
+.experienceContent .when{
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 12px;
+    color: #4A4A4A;
+    letter-spacing: 0.53px;
+    margin-bottom: 10px;
+}
+.experienceContent .who{
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 12px;
+    color: #8A1737;
+    letter-spacing: 0.53px;
+    margin-bottom: 12px;
+}
+.experienceContent .where{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 12px;
+    color: #4A4A4A;
+    letter-spacing: 0.53px;
+    margin-bottom: 10px;
+}
+.experienceContent p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 10px;
+    color: #9B9B9B;
+    letter-spacing: 0.44px;
+    line-height: 18px;
+}
+.exp1{
+    position: absolute;
+    left: 500px;
+    top: 165px;
+}
+.exp2{
+    position: absolute;
+    left: 191px;
+    top: 308px;
+}
+.exp3{
+    position: absolute;
+    left: 500px;
+    top: 449px;
+}
+    /*works*/
+.works h2{
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 24px;
+    color: #FB56BF;
+    text-align: center;
+    margin-bottom: 46px;
+}
+.worksBox{
+    display: flex;
+    padding:0px 62px 0px 62px;
+    margin-bottom: 98.4px;
+}
+.worksBox li{
+    width: 284px;
+    border-radius: 4px;
+    margin:0px 8px 0px 8px;
+}
+.worksBox li:hover{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.40);
+}
+.worksBox h4{
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    margin:9px 8px 7px 8px;
+}
+.worksBox p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 14px;
+    color: #4A4A4A;
+    margin: 0px 8px 9px 8px;
+}
+.bg2, .bg3{
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+.worksBox .bg1{
+    background: #fdb4e3;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 150px;
+}
+.worksBox .bg2{
+    background: #424242;
+}
+.worksBox .bg3{
+    background: #8AD7FA;
+}
+    /*About*/
+.about h2{
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 24px;
+    color: #FB56BF;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 48.6px;
+}
+.aboutBox{
+    display: flex;
+}
+.aboutBox img{
+    width: 260px;
+    height: 335px;
+    margin:0px 44px 74px 176px;
+}
+.aboutBox .selfintro{
+    width: 442px;
+}
+.aboutBox p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 26px;
+    margin-bottom: 26px;
+}
+
+/*footer*/
+.footer{
+    background: url(HTML_sketch_export-master/assets/img-Looper-bg.png);
+    height:87px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: MicrosoftJhengHeiRegular;
+}
